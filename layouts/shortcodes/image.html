@@ -1,0 +1,14 @@
+{{ $image := .Page.Resources.GetMatch (printf "*%s*" .Params.src) }}
+{{ $width := .Params.width | default "500" }}
+{{ with $image }}
+  {{ $small := $image.Resize (printf "%sx jpg q75" $width) }}
+  <img
+    loading="lazy"
+    {{ with .Params.alt }}
+      alt='{{ .Params.alt }}'
+    {{ end }}
+    src='{{ $small.RelPermalink }}'
+    data-zoomable
+    data-zoom-src='{{ $image.RelPermalink }}'
+  />
+{{ end }}
