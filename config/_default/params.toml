@@ -1,4 +1,4 @@
-colorScheme = "marvel"
+colorScheme = "ocean"
 defaultAppearance = "light"
 autoSwitchAppearance = true
 enableSearch = true
@@ -9,7 +9,12 @@ disableImageZoom = false
 disableTextInHeader = false
 giteaDefaultServer = "https://git.fsfe.org"
 forgejoDefaultServer = "https://v8.next.forgejo.org"
-defaultBackgroundImage = "mb.jpg"
+defaultBackgroundImage = "robot.jpg"
+
+[author]
+name = "Beppo Craig"
+image = "beppo.jpg"
+
 
 [header]
 layout = "basic"
@@ -27,7 +32,7 @@ showRecent = true
 showRecentItems = 5
 showMoreLink = false
 showMoreLinkDest = "/posts/"
-cardView = "Enable"
+cardView = true
 cardViewScreenWidth = false
 layoutBackgroundBlur = false
 
@@ -38,8 +43,9 @@ showLikes = false
 showDateOnlyInArticle = false
 showDateUpdated = false
 showAuthor = true
-showHero = false
+showHero = true
 layoutBackgroundBlur = true
+heroStyle = "background"
 layoutBackgroundHeaderSpace = true
 showBreadcrumbs = false
 showDraftLabel = true
@@ -57,7 +63,8 @@ showWordCount = true
 showZenMode = false
 
 [list]
-showHero = false
+showHero = true
+heroStyle = "background"
 layoutBackgroundBlur = true
 layoutBackgroundHeaderSpace = true
 showBreadcrumbs = false
